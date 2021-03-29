@@ -29,7 +29,8 @@ uses
   UCadastroTanqueCombustivel,
   UCadastroBomba,
   UAbastecimento,
-  UParametroRelAbastecimento;
+  UParametroRelAbastecimento,
+  UCadastroUsuario;
 
 type
   TfrmMenu = class(TForm)
@@ -44,13 +45,15 @@ type
     Image1: TImage;
     actRelAbastecimento: TAction;
     actRelatorios: TAction;
+    actUsuario: TAction;
     procedure actClienteExecute(Sender: TObject);
     procedure actTanqueCombustivelExecute(Sender: TObject);
     procedure actBombasExecute(Sender: TObject);
     procedure actAbastecimentoExecute(Sender: TObject);
+    procedure actRelAbastecimentoExecute(Sender: TObject);
+    procedure actUsuarioExecute(Sender: TObject);
     procedure actSairExecute(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
-    procedure actRelAbastecimentoExecute(Sender: TObject);
   private
     { Private declarations }
   public
@@ -97,6 +100,13 @@ begin
   if frmParamRelAbastecimento=nil then
     frmParamRelAbastecimento:=TfrmParamRelAbastecimento.Create(Self);
   frmParamRelAbastecimento.Show;
+end;
+
+procedure TfrmMenu.actUsuarioExecute(Sender: TObject);
+begin
+  if frmCadastroUsuario=nil then
+    frmCadastroUsuario:=TfrmCadastroUsuario.Create(Self);
+  frmCadastroUsuario.Show;
 end;
 
 procedure TfrmMenu.actSairExecute(Sender: TObject);

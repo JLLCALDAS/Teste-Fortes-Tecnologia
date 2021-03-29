@@ -163,6 +163,13 @@
             <Form>frmParamRelAbastecimento</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="View\UdtmCadastroUsuario.pas">
+            <Form>dtmCadastroUsuario</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="View\UCadastroUsuario.pas">
+            <Form>frmCadastroUsuario</Form>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

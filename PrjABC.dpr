@@ -4,6 +4,8 @@ uses
   System.SysUtils,
   Vcl.Controls,
   Vcl.Forms,
+  Vcl.Themes,
+  Vcl.Styles,
   ULogin in 'ULogin.pas' {frmLogin},
   classeCommon in 'Commons\classeCommon.pas',
   dtmConections in 'Conections\dtmConections.pas' {dtmConection: TDataModule},
@@ -19,11 +21,11 @@ uses
   UdtmCadastroTanqueCombustivel in 'View\UdtmCadastroTanqueCombustivel.pas' {dtmCadastroTanqueCombustivel: TDataModule},
   UAbastecimento in 'View\UAbastecimento.pas' {frmAbastecimento},
   UdtmAbastecimento in 'View\UdtmAbastecimento.pas' {dtmAbastecimento: TDataModule},
-  Vcl.Themes,
-  Vcl.Styles,
   URelatoriosAbastecimentosPeriodo in 'View\URelatoriosAbastecimentosPeriodo.pas' {frmRelatorioAbastecimento},
   UdtmRelatoriosAbastecimentosPeriodo in 'View\UdtmRelatoriosAbastecimentosPeriodo.pas' {dtmRelatorioAbastecimento: TDataModule},
-  UParametroRelAbastecimento in 'View\UParametroRelAbastecimento.pas' {frmParamRelAbastecimento};
+  UParametroRelAbastecimento in 'View\UParametroRelAbastecimento.pas' {frmParamRelAbastecimento},
+  UdtmCadastroUsuario in 'View\UdtmCadastroUsuario.pas' {dtmCadastroUsuario: TDataModule},
+  UCadastroUsuario in 'View\UCadastroUsuario.pas' {frmCadastroUsuario};
 
 {$R *.res}
 
